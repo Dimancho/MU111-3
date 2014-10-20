@@ -16,6 +16,9 @@
 		576B8ED019EEDFA00001512D /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576B8ECF19EEDFA00001512D /* Authentication.storyboard */; };
 		578DD41319EEEC8D0089C1CA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578DD41219EEEC8D0089C1CA /* LoginViewController.swift */; };
 		578DD41519EEEE860089C1CA /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578DD41419EEEE860089C1CA /* RegistrationViewController.swift */; };
+		57A3C7DB19F485DC00DCCD0B /* MUApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A3C7DA19F485DC00DCCD0B /* MUApi.swift */; };
+		57A3C7DF19F4863200DCCD0B /* Lecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A3C7DE19F4863200DCCD0B /* Lecture.swift */; };
+		57A3C7E119F488D400DCCD0B /* LectureDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A3C7E019F488D400DCCD0B /* LectureDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,9 @@
 		576B8ECF19EEDFA00001512D /* Authentication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		578DD41219EEEC8D0089C1CA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controllers/LoginViewController.swift; sourceTree = "<group>"; };
 		578DD41419EEEE860089C1CA /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegistrationViewController.swift; path = Controllers/RegistrationViewController.swift; sourceTree = "<group>"; };
+		57A3C7DA19F485DC00DCCD0B /* MUApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MUApi.swift; path = Model/MUApi.swift; sourceTree = "<group>"; };
+		57A3C7DE19F4863200DCCD0B /* Lecture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Lecture.swift; path = Model/Lecture.swift; sourceTree = "<group>"; };
+		57A3C7E019F488D400DCCD0B /* LectureDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LectureDetailsViewController.swift; path = Controllers/LectureDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,7 @@
 		576B8EAC19EEDF720001512D /* MU111-3 */ = {
 			isa = PBXGroup;
 			children = (
+				57A3C7D919F485BD00DCCD0B /* Model */,
 				576B8EAF19EEDF720001512D /* AppDelegate.swift */,
 				576B8ED219EEE9340001512D /* Controllers */,
 				576B8ED119EEE92D0001512D /* UI */,
@@ -133,8 +140,18 @@
 				578DD41419EEEE860089C1CA /* RegistrationViewController.swift */,
 				576B8EB119EEDF720001512D /* LecturesViewController.swift */,
 				578DD41219EEEC8D0089C1CA /* LoginViewController.swift */,
+				57A3C7E019F488D400DCCD0B /* LectureDetailsViewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		57A3C7D919F485BD00DCCD0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				57A3C7DA19F485DC00DCCD0B /* MUApi.swift */,
+				57A3C7DE19F4863200DCCD0B /* Lecture.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,9 +255,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57A3C7DF19F4863200DCCD0B /* Lecture.swift in Sources */,
 				578DD41319EEEC8D0089C1CA /* LoginViewController.swift in Sources */,
 				576B8EB219EEDF720001512D /* LecturesViewController.swift in Sources */,
 				578DD41519EEEE860089C1CA /* RegistrationViewController.swift in Sources */,
+				57A3C7E119F488D400DCCD0B /* LectureDetailsViewController.swift in Sources */,
+				57A3C7DB19F485DC00DCCD0B /* MUApi.swift in Sources */,
 				576B8EB019EEDF720001512D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,7 +18,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WBg-Cj-HBc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-121" y="519"/>
+            <point key="canvasLocation" x="-431" y="121"/>
         </scene>
         <!--Справочник-->
         <scene sceneID="E2u-Iu-BpY">
@@ -29,7 +29,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="4Ac-V4-BUT" detailTextLabel="6vT-Cf-PNY" style="IBUITableViewCellStyleSubtitle" id="gJl-bm-nCw">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="lecturesCell" textLabel="4Ac-V4-BUT" detailTextLabel="6vT-Cf-PNY" style="IBUITableViewCellStyleSubtitle" id="gJl-bm-nCw">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gJl-bm-nCw" id="uWd-pG-Pcx">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -48,6 +48,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="4s0-7f-6CF" kind="push" id="7nu-HG-ndg"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -59,7 +62,26 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IkI-bk-oIU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="302" y="519"/>
+            <point key="canvasLocation" x="17" y="127"/>
+        </scene>
+        <!--Lecture Details View Controller-->
+        <scene sceneID="jiU-Ob-n7x">
+            <objects>
+                <viewController id="4s0-7f-6CF" customClass="LectureDetailsViewController" customModule="MU111_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hUi-Jw-44O"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lwh-yB-Jl1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4AI-D5-Vzg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HJm-gq-Wtg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mqb-T1-aQL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="449" y="127"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
